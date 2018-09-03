@@ -1,0 +1,59 @@
+1.
+git clone <URL>
+(command)copy the whole folder from git hub cloud to local
+
+2.
+touch (linux command to create empty file or the refresh timestamps) in windows could be: 
+type nul> filename.html
+
+3.
+ls (linux command to list all file in directory)
+in windows could be:
+dir
+
+4.
+start appname (e.g start notepad++)
+launch application or command(e.g start ping xx.xx.xx.xx)
+
+5.
+git add <filename>
+(command)add file to queue ,waiting to commit (submit)
+could be several files
+
+6.
+git commit -m "comment" 
+(command) commit the files that have been add
+
+7.
+git push
+(command) upload all the change in local to github
+
+8.
+git pull
+(command) download all the change from github to local
+
+9.
+git status
+(command) the status on git add queue or the file havn't been commit
+
+10.
+Merge confilcts
+If there is a confilct happend in github or local
+so it will be a certain mark on the confilict part
+*如要確認衝突內,何者為預保留的碼,可直接將衝突部位移除
+
+11.
+git log
+(command) all the change have been done of files version
+
+12.
+git reset --hard <commit>
+back to a certain version of file 
+*可從git log得到各個commit 的碼,以回到特定版本
+
+13.
+git reset --hard origin/master
+back to the version on the cloud 
+
+*在本地端的任何改變如還未git push 並不會影響github內檔案
+因此如果在本地做了功能測試,想復原,可以此指令回復到最初從github下載下來之檔案
